@@ -1,0 +1,37 @@
+{
+  "name": "angular-inherits",
+  "version": "1.0.0",
+  "description": "Classical Prototypal Inheritence For AngularJS",
+  "main": "./lib/index.js",
+  "scripts": {
+  	"pretest": "browserify -d -g uglifyify lib/index.js > test/test.bundle.js",
+    "test": "mocha --reporter spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/createvibe/angular-inherits.git"
+  },
+  "keywords": [
+    "angular",
+    "inheritance",
+    "prototypal"
+  ],
+  "author": "Anthony Matarazzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/createvibe/angular-inherits/issues"
+  },
+  "homepage": "https://github.com/createvibe/angular-inherits#readme",
+  "dependencies": {
+  	"inherits": "latest",
+	"angular": "latest"
+  },
+  "devDependencies": {
+  	"mocha": "*",
+  	"browserify": "*",
+  	"uglifyify": "*",
+	"expect": "*",
+	"zombie": "*"
+  },
+  "readmeFile": "README.md"
+}

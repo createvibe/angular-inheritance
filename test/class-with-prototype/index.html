@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angular-inherits test</title>
+	<script type="text/javascript" src="./../test.bundle.js"></script>
+	<script type="text/javascript">
+		function SuperClass() {
+			// empty
+		}
+		SuperClass.prototype._superCalled = false;
+		SuperClass.prototype.runSuper = function() {
+			this._superCalled = true;
+		};
+
+		function ParentClass() {
+			ParentClass.apply(this, arguments);
+			this.runParent();
+		}
+		angular.inherits(ParentClass, SuperClass, {
+			_parentCalled: false,
+			runParent: function() {
+				this._parentCalled = true;
+				this.runSuper();
+			}
+		});
+
+		function ChildClass() {
+			ParentClass.apply(this, arguments);
+			this.runChild();
+		}
+		angular.inherits(ChildClass, ParentClass, {
+			_childCalled: false,
+			runChild: function() {
+				this._childCalled = true;
+				this.runParent();
+			}
+		});
+
+		var obj = new ChildClass();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
