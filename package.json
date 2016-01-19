@@ -1,6 +1,6 @@
 {
   "name": "angular-inherits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Classical Prototypal Inheritence For AngularJS",
   "main": "./lib/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/createvibe/angular-inherits#readme",
   "dependencies": {
   	"inherits": "latest",
-	"angular": "latest"
+	"angular": "*"
   },
   "devDependencies": {
   	"mocha": "*",

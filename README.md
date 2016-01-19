@@ -1,6 +1,8 @@
 # angular-inherits
 Classical Prototypal Inheritance For AngularJS
 
-NOTE: This library is still being developed.
+Allow easy inheritance for services and classes inside Angular.
 
-NOTE: Tests don't work yet, need to rebuild with karma for true angular tests
+Install using NPM: `npm install angular-inherits`
+
+Examples coming soon.  For now, have a look at the [`angular-oop`](http://github.com/createvibe/angular-oop) library.
