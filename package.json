@@ -1,6 +1,6 @@
 {
   "name": "angular-inherits",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Classical Prototypal Inheritence For AngularJS",
   "main": "./lib/index.js",
   "scripts": {
